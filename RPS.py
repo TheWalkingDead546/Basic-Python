@@ -28,15 +28,16 @@ while(True):
         i = 1
         while i < 4:
             x = random.choice(possible_choices)
-            user_input = input("Rock,Paper or Scissors? ")
-            if x == user_input.capitalize():
+            user_input1 = input("Rock,Paper or Scissors? ")
+            user_input = user_input1.capitalize()
+            if x == user_input:
                 print(f"Computer picked",x, "You picked", user_input, "The game has TIED, 0.5 points each")
                 comp_points = comp_points + 0.5
                 user_points = user_points +  0.5
-            elif (x == "Rock" and user_input == "Paper") or (x == "Paper" and user_input == "Scissors") or (x == "Scissors" and user_input == "Rock") or (x == "Rock" and user_input == "PAPER") or (x == "Paper" and user_input == "SCISSORS") or (x == "Scissors" and user_input == "ROCK") or (x == "Rock" and user_input == "paper") or (x == "Paper" and user_input == "scissors") or (x == "Scissors" and user_input == "rock"):
+            elif (x == "Rock" and user_input == "Paper") or (x == "Paper" and user_input == "Scissors") or (x == "Scissors" and user_input == "Rock") :
                 print(f"Computer picked",x, "You picked", user_input, "CONGRATULATIONS YOU WIN ")
                 user_points = user_points + 1
-            elif (user_input == "Rock" and x == "Paper") or (user_input == "Paper" and x == "Scissors") or (user_input == "Scissors" and x == "Rock") or (user_input == "ROCK" and x == "Paper") or (user_input == "PAPER" and x == "Scissors") or (user_input == "SCISSORS" and x == "Rock") or (user_input == "rock" and x == "Paper") or (user_input == "paper" and x == "Scissors") or (user_input == "scissors" and x == "Rock"):
+            elif (user_input == "Rock" and x == "Paper") or (user_input == "Paper" and x == "Scissors") or (user_input == "Scissors" and x == "Rock") :
                 print(f"Computer picked",x, "You picked", user_input,"COMPUTER WINS ")
                 comp_points = comp_points + 1
             else:
@@ -47,15 +48,16 @@ while(True):
         i = 1
         while i < 6:
             x = random.choice(possible_choices)
-            user_input = input("Rock,Paper or Scissors? ")
-            if x == user_input.lower():
+            user_input1 = input("Rock,Paper or Scissors? ")
+            user_input = user_input1.capitalize()
+            if x == user_input:
                 print(f"Computer picked",x, "You picked", user_input,"TIED, 0.5 points each ")
                 comp_points = comp_points + 0.5
                 user_points = user_points +  0.5
-            elif (x == "Rock" and user_input == "Paper") or (x == "Paper" and user_input == "Scissors") or (x == "Scissors" and user_input == "Rock") or (x == "Rock" and user_input == "PAPER") or (x == "Paper" and user_input == "SCISSORS") or (x == "Scissors" and user_input == "ROCK") or (x == "Rock" and user_input == "paper") or (x == "Paper" and user_input == "scissors") or (x == "Scissors" and user_input == "rock"):
+            elif (x == "Rock" and user_input == "Paper") or (x == "Paper" and user_input == "Scissors") or (x == "Scissors" and user_input == "Rock") :
                 print(f"Computer picked",x, "You picked", user_input,"CONGRATULATIONS YOU WIN ")
                 user_points = user_points + 1
-            elif (user_input == "Rock" and x == "Paper") or (user_input == "Paper" and x == "Scissors") or (user_input == "Scissors" and x == "Rock") or (user_input == "ROCK" and x == "Paper") or (user_input == "PAPER" and x == "Scissors") or (user_input == "SCISSORS" and x == "Rock") or (user_input == "rock" and x == "Paper") or (user_input == "paper" and x == "Scissors") or (user_input == "scissors" and x == "Rock"):
+            elif (user_input == "Rock" and x == "Paper") or (user_input == "Paper" and x == "Scissors") or (user_input == "Scissors" and x == "Rock") :
                 print(f"Computer picked",x, "You picked", user_input,"COMPUTER WINS ")
                 comp_points = comp_points + 1
             else:
